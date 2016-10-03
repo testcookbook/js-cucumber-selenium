@@ -1,6 +1,6 @@
 var seleniumWebdriver = require('selenium-webdriver');
-var firefox = require('selenium-webdriver/firefox');
-var chrome = require('selenium-webdriver/chrome');
+//var firefox = require('selenium-webdriver/firefox');
+//var chrome = require('selenium-webdriver/chrome');
 
 function CustomWorld() {
   this.driver = new seleniumWebdriver.Builder()
@@ -10,5 +10,5 @@ function CustomWorld() {
 
 module.exports = function() {
   this.World = CustomWorld;
-  this.setDefaultTimeout(3330 * 1000);
+  this.setDefaultTimeout(30 * 1000);
 };
